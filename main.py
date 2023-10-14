@@ -5,6 +5,7 @@ import asyncio
 from const import SEARCH_LIST, ADMIN_IDS, RUN_INTERVAL, NEKO, STORAGE
 from loggers import main_logger
 import scrappers
+import menus
 
 
 async def send_data(data: Menu, user: int):
@@ -57,6 +58,8 @@ async def scrape_urls():
 
 
 async def startup(_):
+    NEKO.attach_router(menus.util.formatters.ROUTER)
+
     await NEKO.storage.acquire_pool()
 
     # Import database structure
