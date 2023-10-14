@@ -1,0 +1,16 @@
+{
+  "lang": "en",
+  "start": {
+    "text": "Hello",
+    "no_permission": "You don't have permissions to use me"
+  },
+  "notification_found": {
+    "text": "⚠️Found {item} at {store}!",
+    "markup": [
+      [{"text": "🚀Get it!", "url": "{url}"}]
+    ]
+  },
+  "notification_error": {
+    "text": "🔴{scrapper} has failed. Please check the situation and apply measures."
+  }
+}
